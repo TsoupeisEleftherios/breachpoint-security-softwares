@@ -169,6 +169,61 @@ header .cta-button:hover {
     transform: scale(1.05);
 }
 
+/* Styling for SIEM Showcase Section */
+#siem-showcase {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.siem-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 80%; /* You can adjust this as per your needs */
+}
+
+.siem-image {
+    display: none; /* Initially hide all images */
+    max-width: 100%; /* Adjust to fit container */
+    height: auto;
+}
+
+.siem-images .nav-button {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.siem-images .nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
 /* Testimonials Section */
 #testimonials {
     padding: 80px 0;
