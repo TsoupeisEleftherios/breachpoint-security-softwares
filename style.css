@@ -1,4 +1,4 @@
-/* Global Reset and Font Setup */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +7,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    background-color: #f8f8f8;
+    line-height: 1.6;
 }
 
 a {
@@ -16,105 +17,100 @@ a {
     color: inherit;
 }
 
-ul {
-    list-style-type: none;
-}
-
 .container {
     width: 85%;
     margin: 0 auto;
 }
 
-/* Header Styling */
+/* Header Styles */
 header {
-    background-color: #1a2d3f;
+    background: linear-gradient(135deg, #ff7f50, #1a2d3f);
     color: white;
     padding: 80px 0;
     text-align: center;
 }
 
-header h1 {
-    font-size: 3.5em;
+header .main-title {
+    font-size: 4em;
     margin-bottom: 20px;
 }
 
-.subtitle {
-    font-size: 1.5em;
-    margin-bottom: 40px;
+header .tagline {
+    font-size: 1.6em;
+    margin-bottom: 30px;
 }
 
-.cta-button {
-    background-color: #ff7f50;
-    color: white;
-    padding: 15px 30px;
+header .cta-button {
+    background-color: #fff;
+    color: #1a2d3f;
+    padding: 15px 40px;
     font-size: 1.2em;
     border-radius: 50px;
-    display: inline-block;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #ff6b35;
+header .cta-button:hover {
+    background-color: #ff7f50;
+    color: white;
 }
 
-/* Features Section Styling */
+/* Features Section */
 #features {
+    padding: 80px 0;
     background-color: #ffffff;
-    padding: 60px 0;
     text-align: center;
 }
 
-#features h2 {
+#features .section-title {
     font-size: 2.5em;
     margin-bottom: 50px;
+    color: #1a2d3f;
 }
 
-.feature-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
 }
 
-.feature-card {
-    background-color: #f4f4f4;
-    padding: 30px;
+.feature-item {
+    background-color: #f9f9f9;
+    padding: 40px;
     border-radius: 15px;
-    width: 30%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.feature-card:hover {
+.feature-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.icon {
-    font-size: 3.5em;
-    color: #ff7f50;
+.feature-item img {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-.feature-card h3 {
+.feature-item h3 {
     font-size: 1.8em;
     margin-bottom: 15px;
 }
 
-.feature-card p {
-    font-size: 1.1em;
+.feature-item p {
+    font-size: 1.2em;
     color: #666;
 }
 
-/* Pricing Section Styling */
+/* Pricing Section */
 #pricing {
+    padding: 80px 0;
     background-color: #1a2d3f;
     color: white;
-    padding: 60px 0;
     text-align: center;
 }
 
-#pricing h2 {
+#pricing .section-title {
     font-size: 2.5em;
     margin-bottom: 50px;
 }
@@ -122,57 +118,49 @@ header h1 {
 .pricing-cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .pricing-card {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #333;
+    width: 300px;
     padding: 40px;
-    width: 270px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .pricing-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.pricing-card h3 {
-    font-size: 2em;
-    margin-bottom: 15px;
 }
 
 .pricing-card .price {
     font-size: 2.5em;
     font-weight: bold;
-    margin-bottom: 20px;
     color: #1a2d3f;
+    margin: 20px 0;
 }
 
 .pricing-card ul {
-    font-size: 1.1em;
+    list-style-type: none;
     margin-bottom: 25px;
 }
 
 .pricing-card ul li {
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-.pricing-card button {
+.pricing-card .cta-button {
     background-color: #ff7f50;
     color: white;
     padding: 12px 25px;
-    border: none;
     border-radius: 50px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.pricing-card button:hover {
+.pricing-card .cta-button:hover {
     background-color: #ff6b35;
 }
 
@@ -181,15 +169,59 @@ header h1 {
     transform: scale(1.05);
 }
 
-/* Footer Styling */
+/* Testimonials Section */
+#testimonials {
+    padding: 80px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#testimonials .section-title {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #1a2d3f;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.testimonial-card p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h4 {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Footer Section */
 footer {
     background-color: #333;
     color: white;
-    padding: 30px 0;
+    padding: 40px 0;
     text-align: center;
+}
+
+footer p {
+    font-size: 1.1em;
 }
 
 footer a {
     color: #ff7f50;
     font-weight: bold;
+    text-decoration: none;
 }
