@@ -296,3 +296,34 @@ footer a {
     font-weight: bold;
     text-decoration: none;
 }
+
+/* Trial Access Information Section */
+#trial-access {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#trial-access .section-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #1a2d3f;
+}
+
+#trial-access ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+#trial-access p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#trial-access a {
+    color: #ff7f50;
+    font-weight: bold;
+    text-decoration: none;
+}
