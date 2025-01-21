@@ -284,3 +284,21 @@ footer a {
     font-weight: bold;
     text-decoration: none;
 }
+
+/* Logo Container Styling */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centering the logo */
+    align-items: center;
+    background-color: #0056b3; /* Set the blue background */
+    padding: 20px;
+    border-radius: 8px; /* Add some rounded corners for aesthetics */
+}
+
+/* Logo Styling */
+.logo-container img {
+    max-width: 150px; /* Control the size of the logo */
+    height: auto;
+    margin: 0 auto;
+}
+
