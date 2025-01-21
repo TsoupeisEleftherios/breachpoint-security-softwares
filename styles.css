@@ -12,16 +12,11 @@ body {
     line-height: 1.6;
     padding: 0;
     margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
+    background-image: url('images/your-logo.png'); /* Add your logo file path here */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.1; /* Adjust to control transparency of the logo */
 }
 
 /* Header Styles */
@@ -44,295 +39,141 @@ header .tagline {
     margin-bottom: 30px;
 }
 
-header .cta-button {
-    background-color: #fff;
-    color: #1a2d3f;
-    padding: 15px 40px;
+header .additional-info {
     font-size: 1.2em;
-    border-radius: 50px;
-    text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
-}
-
-header .cta-button:hover {
-    background-color: #ff7f50;
-    color: white;
+    margin-bottom: 30px;
 }
 
 /* Features Section */
 #features {
-    padding: 80px 0;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-#features .section-title {
-    font-size: 2.8em;
-    margin-bottom: 50px;
-    color: #1a2d3f;
-    font-weight: 600;
+    padding: 60px 0;
+    background-color: #fff;
 }
 
 .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
 .feature-item {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    width: 30%;
     text-align: center;
 }
 
-.feature-item:hover {
-    transform: translateY(-10px);
-}
-
 .feature-item img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
 }
 
 .feature-item h3 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 
 .feature-item p {
     font-size: 1.2em;
-    color: #666;
+    margin-top: 10px;
+}
+
+/* Our Automated Scripts Section */
+#automations {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.automation-list h3 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+.automation-list p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
 }
 
 /* Pricing Section */
 #pricing {
-    padding: 80px 0;
-    background-color: #f8f8f8;
-    text-align: center;
-}
-
-#pricing .section-title {
-    font-size: 2.8em;
-    margin-bottom: 50px;
-    color: #1a2d3f;
-    font-weight: 600;
+    padding: 60px 0;
 }
 
 .pricing-cards {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.pricing-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
-    transition: transform 0.3s ease;
-}
-
-.pricing-card:hover {
-    transform: translateY(-10px);
-}
-
-.pricing-card h3 {
-    font-size: 2em;
-    color: #1a2d3f;
-    margin-bottom: 15px;
-}
-
-.pricing-card .price {
-    font-size: 2.5em;
-    color: #ff7f50;
-    margin-bottom: 30px;
-}
-
-.pricing-card ul {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.pricing-card ul li {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.pricing-card .cta-button {
-    background-color: #ff7f50;
-    color: white;
-    padding: 15px 40px;
-    font-size: 1.2em;
-    border-radius: 50px;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
-}
-
-.pricing-card .cta-button:hover {
-    background-color: #1a2d3f;
-    color: white;
-}
-
-.popular {
-    background-color: #fffbf0;
-    border: 2px solid #ff7f50;
-}
-
-.popular .cta-button {
-    background-color: #ff7f50;
-    color: white;
-}
-
-/* Automated Scripts Section */
-#scripts {
-    padding: 80px 0;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-#scripts .section-title {
-    font-size: 2.8em;
-    margin-bottom: 50px;
-    color: #1a2d3f;
-}
-
-.script-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 40px;
-}
-
-.script-item {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    text-align: center;
-}
-
-.script-item:hover {
-    transform: translateY(-10px);
-}
-
-.script-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.script-item h3 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.script-item p {
-    font-size: 1.2em;
-    color: #666;
-}
-
-/* SIEM Image Section */
-#siem {
-    padding: 80px 0;
-    background-color: #f8f8f8;
-    text-align: center;
-}
-
-#siem .section-title {
-    font-size: 2.8em;
-    margin-bottom: 50px;
-    color: #1a2d3f;
-}
-
-.siem-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 30px;
-}
-
-.siem-thumbnails {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
     margin-top: 40px;
 }
 
-.siem-thumbnails img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+.pricing-card {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.siem-thumbnails img:hover {
-    transform: scale(1.05);
+.pricing-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.pricing-card .price {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
 }
 
 /* Testimonials Section */
 #testimonials {
-    padding: 80px 0;
-    background-color: #ffffff;
+    padding: 60px 0;
+    background-color: #fff;
     text-align: center;
-}
-
-#testimonials .section-title {
-    font-size: 2.8em;
-    margin-bottom: 50px;
-    color: #1a2d3f;
 }
 
 .testimonial-cards {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
 .testimonial-card {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
-.testimonial-card p {
+    width: 45%;
     font-size: 1.2em;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.testimonial-card h4 {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #1a2d3f;
+    margin-top: 20px;
 }
 
 /* Footer Section */
 footer {
-    background-color: #1a2d3f;
-    color: white;
     padding: 40px 0;
+    background-color: #333;
+    color: white;
     text-align: center;
 }
 
 footer a {
     color: #ff7f50;
+    text-decoration: none;
 }
 
 footer a:hover {
