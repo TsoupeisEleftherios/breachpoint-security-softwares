@@ -258,8 +258,15 @@ header .cta-button:hover {
 
 #trial-access ul {
     list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 20px;
+    margin-left: 40px;  /* Indentation for bullets */
+    padding-left: 20px; /* Extra padding for better spacing */
+    text-align: left;    /* Ensure the text is left-aligned */
+    display: inline-block; /* Keep the list from stretching across */
+}
+
+#trial-access li {
+    text-align: left;  /* Ensure list items are left-aligned */
+    margin-bottom: 10px; /* Add space between items */
 }
 
 #trial-access a {
