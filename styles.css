@@ -284,3 +284,10 @@ footer a {
     font-weight: bold;
     text-decoration: none;
 }
+
+/* Aligning content to the left inside pricing cards */
+.pricing-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: left;
+}
