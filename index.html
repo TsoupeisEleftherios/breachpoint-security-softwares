@@ -9,6 +9,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom Styling for Logo and Background */
+        header {
+            background: url('logo.png') no-repeat center center/cover;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .header-content {
+            color: white;
+        }
+
+        /* Custom Styling for Images in Features Section */
+        .feature-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .feature-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Styling for SIEM Showcase Section */
+        #siem-showcase {
+            padding: 40px 0;
+            background-color: #f4f4f4;
+        }
+
+        .siem-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .siem-images img {
+            border-radius: 10px;
+            max-width: 33%;
+            height: auto;
+        }
+
+        .siem-images img.big {
+            max-width: 50%; /* Larger Image */
+        }
+
+        /* Styling for Scripts List Section */
+        #scripts-list {
+            padding: 40px 0;
+            background-color: #ffffff;
+        }
+
+        .scripts-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .script-item {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .script-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,6 +120,42 @@
                     <h3>Incident Response Automation</h3>
                     <p>Automated workflows for fast, accurate incident management, reducing downtime and impact.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automated Scripts List -->
+    <section id="scripts-list">
+        <div class="container">
+            <h2 class="section-title">Automated Scripts We Offer</h2>
+            <div class="scripts-grid">
+                <div class="script-item">
+                    <img src="https://via.placeholder.com/100" alt="Script 1">
+                    <h3>Script 1</h3>
+                    <p>Automates vulnerability scanning on web applications.</p>
+                </div>
+                <div class="script-item">
+                    <img src="https://via.placeholder.com/100" alt="Script 2">
+                    <h3>Script 2</h3>
+                    <p>Automated brute-force attack on login pages.</p>
+                </div>
+                <div class="script-item">
+                    <img src="https://via.placeholder.com/100" alt="Script 3">
+                    <h3>Script 3</h3>
+                    <p>Performs phishing tests for email security awareness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIEM Showcase Section -->
+    <section id="siem-showcase">
+        <div class="container">
+            <h2 class="section-title">Our Custom SIEM Showcase</h2>
+            <div class="siem-images">
+                <img src="https://via.placeholder.com/500x300" alt="SIEM Image 1" class="big">
+                <img src="https://via.placeholder.com/300x200" alt="SIEM Image 2">
+                <img src="https://via.placeholder.com/300x200" alt="SIEM Image 3">
             </div>
         </div>
     </section>
