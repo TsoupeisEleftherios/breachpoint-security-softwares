@@ -24,30 +24,24 @@ a {
 
 /* Header Styles */
 header {
+    background: url('https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/shield_logo_transparent-removebg.png?raw=true') no-repeat center center/contain;
     background-color: #1a2d3f; /* Beautiful blue color */
     padding: 100px 0;
     text-align: center;
-    display: flex;
-    justify-content: space-between; /* Distribute content evenly */
-    align-items: center;
+    background-size: contain; /* Makes sure the logo fits well */
+    background-position: center center; /* Keeps the logo centered */
+    background-repeat: no-repeat; /* Ensures the logo doesn't repeat */
 }
 
-header .logo-left img,
-header .logo-right img {
-    max-width: 150px; /* Adjust the size as needed */
-    height: auto;
-}
 
 header .main-title {
     font-size: 4em;
     margin-bottom: 20px;
-    color: white; /* Set header text color to white */
 }
 
 header .tagline {
     font-size: 1.6em;
     margin-bottom: 30px;
-    color: white; /* Set tagline text color to white */
 }
 
 header .cta-button {
