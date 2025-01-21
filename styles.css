@@ -195,15 +195,24 @@ header .cta-button:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    max-width: 80%; /* You can adjust this as per your needs */
+    width: 100%; /* Allow the wrapper to use the full width */
+    max-width: 1200px; /* Max width for the container, adjust as needed */
+    height: 800px; /* Set a fixed height for consistency */
 }
 
 .siem-image {
     display: none; /* Initially hide all images */
-    max-width: 100%; /* Adjust to fit container */
-    height: auto;
+    object-fit: contain; /* Ensure images maintain their aspect ratio and fit inside the container */
+    width: 100%; /* Make the image take up the full width of the container */
+    height: 100%; /* Make the image fill the container height */
 }
 
+/* Show the first image by default */
+#image1 {
+    display: block;
+}
+
+/* Navigation button styles */
 .siem-images .nav-button {
     position: absolute;
     top: 50%;
