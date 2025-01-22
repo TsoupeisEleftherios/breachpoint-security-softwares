@@ -22,26 +22,40 @@ a {
     margin: 0 auto;
 }
 
+/* Shield above header */
+#shield {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 10; /* Make sure it appears above other content */
+}
+
 /* Header Styles */
 header {
     background: url('https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/shield_logo_transparent-removebg.png?raw=true') no-repeat center center/contain;
-    background-color: #1a2d3f; /* Beautiful blue color */
+    background-color: #1a2d3f;
     padding: 100px 0;
     text-align: center;
-    background-size: contain; /* Makes sure the logo fits well */
-    background-position: center center; /* Keeps the logo centered */
-    background-repeat: no-repeat; /* Ensures the logo doesn't repeat */
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-
 
 header .main-title {
     font-size: 4em;
     margin-bottom: 20px;
+    color: white; /* White text for visibility */
 }
 
 header .tagline {
     font-size: 1.6em;
     margin-bottom: 30px;
+    color: white; /* White text for visibility */
 }
 
 header .cta-button {
@@ -133,7 +147,7 @@ header .cta-button:hover {
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .pricing-card:hover {
@@ -149,13 +163,13 @@ header .cta-button:hover {
 
 .pricing-card ul {
     list-style-type: disc;
-    margin-left: 20px; /* Add left margin for bullet points */
-    padding-left: 20px; /* Add padding for proper alignment */
+    margin-left: 20px;
+    padding-left: 20px;
 }
 
 .pricing-card ul li {
     font-size: 1.2em;
-    margin-bottom: 10px; /* Space between bullet points */
+    margin-bottom: 10px;
 }
 
 .pricing-card .cta-button {
@@ -195,16 +209,16 @@ header .cta-button:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100%; /* Allow the wrapper to use the full width */
-    max-width: 1200px; /* Max width for the container, adjust as needed */
-    height: 800px; /* Set a fixed height for consistency */
+    width: 100%;
+    max-width: 1200px;
+    height: 800px;
 }
 
 .siem-image {
-    display: none; /* Initially hide all images */
-    object-fit: contain; /* Ensure images maintain their aspect ratio and fit inside the container */
-    width: 100%; /* Make the image take up the full width of the container */
-    height: 100%; /* Make the image fill the container height */
+    display: none;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 /* Show the first image by default */
@@ -212,7 +226,6 @@ header .cta-button:hover {
     display: block;
 }
 
-/* Navigation button styles */
 .siem-images .nav-button {
     position: absolute;
     top: 50%;
@@ -242,31 +255,31 @@ header .cta-button:hover {
 
 /* Trial Access Information Section */
 #trial-access {
-    padding: 60px 20px;  /* Padding left and right are reduced for better alignment */
+    padding: 60px 20px;
     background-color: #ffffff;
-    text-align: left;  /* Ensure content is aligned left */
+    text-align: left;
     font-size: 1.2em;
     color: #333;
-    border-top: 5px solid #ff7f50; /* Accent color border */
-    max-width: 900px;  /* Constrain width to ensure alignment */
-    margin: 0 auto;    /* Center the section itself, but align text inside left */
+    border-top: 5px solid #ff7f50;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 #trial-access .section-title {
     font-size: 2.5em;
-    margin-bottom: 20px; /* Reduced space between title and content */
-    color: #1a2d3f;  /* Main title color */
+    margin-bottom: 20px;
+    color: #1a2d3f;
 }
 
 #trial-access ul {
     list-style-type: disc;
-    padding-left: 40px;  /* Ensure proper indentation for bullets */
-    margin-left: 0;  /* Reset any additional left margin */
-    text-align: left;   /* Left-align the list items */
+    padding-left: 40px;
+    margin-left: 0;
+    text-align: left;
 }
 
 #trial-access li {
-    margin-bottom: 10px; /* Add space between list items */
+    margin-bottom: 10px;
 }
 
 #trial-access a {
@@ -278,7 +291,6 @@ header .cta-button:hover {
 #trial-access a:hover {
     text-decoration: underline;
 }
-
 
 /* Testimonials Section */
 #testimonials {
