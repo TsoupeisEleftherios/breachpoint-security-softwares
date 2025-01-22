@@ -25,29 +25,20 @@ a {
 /* Header Styles */
 header {
     background-color: #1a2d3f;
-    padding: 100px 0;
+    padding: 80px 50px; /* Padding for spacing */
     display: flex;
-    justify-content: space-between; /* Distribute space between left text and shield logo */
+    justify-content: space-between; /* Space between text and shield */
     align-items: center;
-    position: relative;
     color: white;
 }
 
-header .container {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 header .header-left {
-    flex: 0 0 20%; /* Text section takes up 20% */
+    flex: 1; /* Allow it to take up available space */
     text-align: left;
 }
 
 header .header-left .main-title {
-    font-size: 3.5em;
+    font-size: 3rem;
     margin-bottom: 20px;
     color: white;
     font-weight: bold;
@@ -55,7 +46,7 @@ header .header-left .main-title {
 }
 
 header .header-left .tagline {
-    font-size: 1.6em;
+    font-size: 1.5rem;
     margin-bottom: 30px;
     color: white;
     font-weight: lighter;
@@ -65,7 +56,7 @@ header .cta-button {
     background-color: #ff7f50;
     color: white;
     padding: 15px 40px;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     border-radius: 50px;
     transition: background-color 0.3s ease;
     text-transform: uppercase;
@@ -78,17 +69,16 @@ header .cta-button:hover {
 }
 
 header .logo-container {
-    flex: 0 0 20%; /* Shield section takes up 20% */
+    flex: 0 0 auto; /* Keep shield from stretching */
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 #shield {
-    position: absolute;
-    width: 120px; /* Size of the shield */
-    height: 120px;
-    opacity: 0.8;
-    z-index: 10;
+    width: 100px; /* Adjust shield size */
+    height: auto;
+    opacity: 0.9;
 }
 
 /* Features Section */
