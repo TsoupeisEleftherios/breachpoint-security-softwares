@@ -39,23 +39,34 @@ a {
 header {
     background: url('https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/shield_logo_transparent-removebg.png?raw=true') no-repeat center center/contain;
     background-color: #1a2d3f;
-    padding: 100px 0;
+    padding: 120px 0 60px; /* Increase top padding for space */
     text-align: center;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
+/* Flexbox for aligning header content */
+header .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the elements */
+}
+
+/* Header Text and Button */
 header .main-title {
     font-size: 4em;
-    margin-bottom: 20px;
-    color: white; /* White text for visibility */
+    margin-bottom: 10px;
+    color: white;
 }
 
 header .tagline {
     font-size: 1.6em;
     margin-bottom: 30px;
-    color: white; /* White text for visibility */
+    color: white;
 }
 
 header .cta-button {
@@ -71,6 +82,7 @@ header .cta-button:hover {
     background-color: #ff7f50;
     color: white;
 }
+
 
 /* Features Section */
 #features {
