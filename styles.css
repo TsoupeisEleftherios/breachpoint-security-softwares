@@ -26,43 +26,38 @@ a {
 header {
     background-color: #1a2d3f;
     padding: 100px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Distribute space between left text and shield logo */
+    align-items: center;
     position: relative;
-    color: white; /* Ensures text is visible */
+    color: white;
 }
 
 header .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
-header .main-title {
+header .header-left {
+    flex: 0 0 20%; /* Text section takes up 20% */
+    text-align: left;
+}
+
+header .header-left .main-title {
     font-size: 3.5em;
     margin-bottom: 20px;
-    color: white; /* White text for visibility */
+    color: white;
     font-weight: bold;
-    text-transform: uppercase; /* Gives a modern, bold effect */
+    text-transform: uppercase;
 }
 
-header .logo-container {
-    margin: 20px 0;
-}
-
-header .logo {
-    width: 120px; /* Adjust the logo size */
-    height: auto;
-    margin-bottom: 20px; /* Ensures spacing between logo and tagline */
-}
-
-header .tagline {
+header .header-left .tagline {
     font-size: 1.6em;
     margin-bottom: 30px;
-    color: white; /* White text for visibility */
+    color: white;
     font-weight: lighter;
 }
 
@@ -78,21 +73,21 @@ header .cta-button {
 }
 
 header .cta-button:hover {
-    background-color: #e56b4f; /* Slightly darker hover state */
+    background-color: #e56b4f;
     color: white;
 }
 
-/* Shield Styles - for the fixed shield */
+header .logo-container {
+    flex: 0 0 20%; /* Shield section takes up 20% */
+    display: flex;
+    justify-content: flex-end;
+}
+
 #shield {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px; /* Smaller size for the shield */
+    width: 80px; /* Size of the shield */
     height: 80px;
     opacity: 0.8;
     z-index: 10;
-    transition: opacity 0.3s ease;
 }
 
 /* Features Section */
