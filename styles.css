@@ -84,8 +84,9 @@ header .logo-container {
 }
 
 #shield {
-    width: 80px; /* Size of the shield */
-    height: 80px;
+    position: absolute;
+    width: 120px; /* Size of the shield */
+    height: 120px;
     opacity: 0.8;
     z-index: 10;
 }
