@@ -22,54 +22,77 @@ a {
     margin: 0 auto;
 }
 
-/* Shield above header */
-#shield {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    z-index: 10; /* Make sure it appears above other content */
-}
-
 /* Header Styles */
 header {
-    background: url('https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/shield_logo_transparent-removebg.png?raw=true') no-repeat center center/contain;
     background-color: #1a2d3f;
     padding: 100px 0;
     text-align: center;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
+    position: relative;
+    color: white; /* Ensures text is visible */
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 header .main-title {
-    font-size: 4em;
+    font-size: 3.5em;
     margin-bottom: 20px;
     color: white; /* White text for visibility */
+    font-weight: bold;
+    text-transform: uppercase; /* Gives a modern, bold effect */
+}
+
+header .logo-container {
+    margin: 20px 0;
+}
+
+header .logo {
+    width: 120px; /* Adjust the logo size */
+    height: auto;
+    margin-bottom: 20px; /* Ensures spacing between logo and tagline */
 }
 
 header .tagline {
     font-size: 1.6em;
     margin-bottom: 30px;
     color: white; /* White text for visibility */
+    font-weight: lighter;
 }
 
 header .cta-button {
-    background-color: #fff;
-    color: #1a2d3f;
+    background-color: #ff7f50;
+    color: white;
     padding: 15px 40px;
     font-size: 1.2em;
     border-radius: 50px;
     transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 header .cta-button:hover {
-    background-color: #ff7f50;
+    background-color: #e56b4f; /* Slightly darker hover state */
     color: white;
+}
+
+/* Shield Styles - for the fixed shield */
+#shield {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; /* Smaller size for the shield */
+    height: 80px;
+    opacity: 0.8;
+    z-index: 10;
+    transition: opacity 0.3s ease;
 }
 
 /* Features Section */
