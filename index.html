@@ -13,15 +13,15 @@
 
         /* Custom Styling for Images in Features Section */
         .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
         }
 
         .feature-item img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
             border-radius: 10px;
         }
 
@@ -56,21 +56,16 @@
 
 <body>
 
-    <!-- Shield above header -->
-    <div id="shield">
-        <img src="https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/shield_logo_transparent-removebg.png?raw=true" alt="BreachPoint Shield">
-    </div>
-
     <!-- Header Section -->
-    <header>
-        <div class="header-content">
-            <div class="container">
-                <h1 class="main-title">BreachPoint Security</h1>
-                <p class="tagline">Empowering businesses with automated security solutions</p>
-                <a href="#pricing" class="cta-button">Get Started</a>
-            </div>
+<header>
+    <div class="header-content">
+        <div class="container">
+            <h1 class="main-title">BreachPoint Security</h1>
+            <p class="tagline">Empowering businesses with automated security solutions</p>
+            <a href="#pricing" class="cta-button">Get Started</a>
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- Features Section -->
     <section id="features">
@@ -97,109 +92,110 @@
     </section>
 
     <!-- Automated Scripts List -->
-    <section id="scripts-list">
-        <div class="container">
-            <h2 class="section-title">Automated Scripts We Offer</h2>
-            <div class="scripts-grid">
-                <div class="script-item">
-                    <h3>Trace Honeypot</h3>
-                    <p>Gathers information about an IP and directs its traffic to an "null" IP address.</p>
-                </div>
-                <div class="script-item">
-                    <h3>Scanning and Information Gathering Scripts</h3>
-                    <p>Fast and reliable information gathering tools and scripts, displaying online available sensitive information about a system.</p>
-                </div>
-                <div class="script-item">
-                    <h3>Custom Interfaces</h3>
-                    <p>Custom Interfaces on top of tools like Nmap to display important information, making it easier to focus on the most important details (CVE's, Headers, Vulnerabilities, Titles, etc.).</p>
-                </div>
+<section id="scripts-list">
+    <div class="container">
+        <h2 class="section-title">Automated Scripts We Offer</h2>
+        <div class="scripts-grid">
+            <div class="script-item">
+                <h3>Trace Honeypot</h3>
+                <p>Gathers information about an IP and directs its traffic to an "null" IP address.</p>
+            </div>
+            <div class="script-item">
+                <h3>Scanning and Information Gathering Scripts</h3>
+                <p>Fast and reliable information gathering tools and scripts, displaying online available sensitive information about a system.</p>
+            </div>
+            <div class="script-item">
+                <h3>Custom Interfaces</h3>
+                <p>Custom Interfaces on top of tools like Nmap to display important information, making it easier to focus on the most important details (CVE's, Headers, Vulnerabilities, Titles, etc.).</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- SIEM Showcase Section -->
-    <section id="siem-showcase">
-        <div class="container">
-            <h2 class="section-title">Our Custom SIEM Showcase</h2>
-            <div class="siem-images">
-                <div class="image-wrapper" id="imageWrapper">
-                    <!-- Image container -->
-                    <img src="https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/SIEM_Big.png?raw=true" 
-                         alt="SIEM Image 1" id="image1" class="siem-image">
-                    <img src="https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/SIEM_Details.png?raw=true" 
-                         alt="SIEM Image 2" id="image2" class="siem-image">
-                    <img src="https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/SIEM_ReportBlockFeature.png?raw=true" 
-                         alt="SIEM Image 3" id="image3" class="siem-image">
-                </div>
-                <!-- Navigation buttons -->
-                <button class="nav-button" id="prevBtn">&#10094;</button>
-                <button class="nav-button" id="nextBtn">&#10095;</button>
+<section id="siem-showcase">
+    <div class="container">
+        <h2 class="section-title">Our Custom SIEM Showcase</h2>
+        <div class="siem-images">
+            <div class="image-wrapper" id="imageWrapper">
+                <!-- Image container -->
+                <img src="https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/SIEM_Big.png?raw=true" 
+                     alt="SIEM Image 1" id="image1" class="siem-image">
+                <img src="https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/SIEM_Details.png?raw=true" 
+                     alt="SIEM Image 2" id="image2" class="siem-image">
+                <img src="https://github.com/TsoupeisEleftherios/breachpoint-security-softwares/blob/main/SIEM_ReportBlockFeature.png?raw=true" 
+                     alt="SIEM Image 3" id="image3" class="siem-image">
             </div>
+            <!-- Navigation buttons -->
+            <button class="nav-button" id="prevBtn">&#10094;</button>
+            <button class="nav-button" id="nextBtn">&#10095;</button>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Pricing Section -->
-    <section id="pricing">
-        <div class="container">
-            <h2 class="section-title">Pricing Plans</h2>
-            <div class="pricing-cards">
-                <!-- Basic Plan (left) -->
-                <div class="pricing-card">
-                    <h3>Basic Plan</h3>
-                    <p class="price">€180/month</p>
-                    <ul>
-                        <li>Basic access to custom automation scripts</li>
-                        <li>Email support for automation assistance</li>
-                        <li>Access to limited features of our Security Suite</li>
-                        <li>Eligible for penetration tests and retests with some limits(Extra)</li>
-                    </ul>
-                    <a href="#trial-access" class="cta-button">Start Free Trial</a>
-                </div>
+<section id="pricing">
+    <div class="container">
+        <h2 class="section-title">Pricing Plans</h2>
+        <div class="pricing-cards">
+            <!-- Basic Plan (left) -->
+            <div class="pricing-card">
+                <h3>Basic Plan</h3>
+                <p class="price">€180/month</p>
+                <ul>
+                    <li>Basic access to custom automation scripts</li>
+                    <li>Email support for automation assistance</li>
+                    <li>Access to limited features of our Security Suite</li>
+                    <li>Eligible for penetration tests and retests with some limits(Extra)</li>
+                </ul>
+                <a href="#trial-access" class="cta-button">Start Free Trial</a>
+            </div>
 
-                <!-- Enterprise Plan (center) -->
-                <div class="pricing-card popular">
-                    <h3>Enterprise Plan</h3>
-                    <p class="price">€650/month</p>
-                    <ul>
-                        <li>All features of the Advanced Plan</li>
-                        <li>Penetration tests and retests with some limits</li>
-                        <li>24/7 dedicated support.</li>
-                        <li>Custom consulting and training</li>
-                    </ul>
-                    <a href="#trial-access" class="cta-button">Start Free Trial</a>
-                </div>
+            <!-- Enterprise Plan (center) -->
+            <div class="pricing-card popular">
+                <h3>Enterprise Plan</h3>
+                <p class="price">€650/month</p>
+                <ul>
+                    <li>All features of the Advanced Plan</li>
+                    <li>Penetration tests and retests with some limits</li>
+                    <li>24/7 dedicated support.</li>
+                    <li>Custom consulting and training</li>
+                </ul>
+                <a href="#trial-access" class="cta-button">Start Free Trial</a>
+            </div>
 
-                <!-- Advanced Plan (right) -->
-                <div class="pricing-card">
-                    <h3>Advanced Plan</h3>
-                    <p class="price">€300/month</p>
-                    <ul>
-                        <li>All features of the Basic Plan</li>
-                        <li>Access to custom SIEM for basic network defense</li>
-                        <li>Requests for custom scripts to help automate team processes</li>
-                        <li>Priority email support</li>
-                        <li>Eligible for penetration tests and retests with some limits(Extra)</li>
-                    </ul>
-                    <a href="#trial-access" class="cta-button">Start Free Trial</a>
-                </div>
+            <!-- Advanced Plan (right) -->
+            <div class="pricing-card">
+                <h3>Advanced Plan</h3>
+                <p class="price">€300/month</p>
+                <ul>
+                    <li>All features of the Basic Plan</li>
+                    <li>Access to custom SIEM for basic network defense</li>
+                    <li>Requests for custom scripts to help automate team processes</li>
+                    <li>Priority email support</li>
+                    <li>Eligible for penetration tests and retests with some limits(Extra)</li>
+                </ul>
+                <a href="#trial-access" class="cta-button">Start Free Trial</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Trial Access Information Section -->
-    <section id="trial-access">
-        <div class="container">
-            <h2 class="section-title">Trial Access Information</h2>
-            <p>To gain access to our free trial and explore the benefits, here’s what’s included:</p>
-            <ul>
-                <li>Penetration testing & vulnerability scanning (limited access)</li>
-                <li>Basic SIEM dashboard preview with alerts</li>
-                <li>Access to select automated security scripts</li>
-                <li>24/7 email support for trial-related inquiries</li>
-            </ul>
-            <p>To get started, please <strong>email us at <a href="mailto:info.breachpoint@gmail.com">info.breachpoint@gmail.com</a></strong> to request your trial access.</p>
-        </div>
-    </section>
+<!-- Trial Access Information Section -->
+<section id="trial-access">
+    <div class="container">
+        <h2 class="section-title">Trial Access Information</h2>
+        <p>To gain access to our free trial and explore the benefits, here’s what’s included:</p>
+        <ul>
+            <li>Penetration testing & vulnerability scanning (limited access)</li>
+            <li>Basic SIEM dashboard preview with alerts</li>
+            <li>Access to select automated security scripts</li>
+            <li>24/7 email support for trial-related inquiries</li>
+        </ul>
+        <p>To get started, please <strong>email us at <a href="mailto:info.breachpoint@gmail.com">info.breachpoint@gmail.com</a></strong> to request your trial access.</p>
+    </div>
+</section>
 
     <!-- Testimonials Section -->
     <section id="testimonials">
