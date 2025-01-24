@@ -205,6 +205,15 @@ header .logo-container {
     transform: scale(1.05);
 }
 
+/* Section Titles centering for Scripts List and SIEM Showcase */
+#scripts-list .section-title,
+#siem-showcase .section-title {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #1a2d3f;
+    text-align: center;  /* Center alignment */
+}
+
 /* Styling for SIEM Showcase Section */
 #siem-showcase {
     padding: 40px 0;
