@@ -135,12 +135,6 @@ header .logo-container {
     color: #666;
 }
 
-/* Center the section titles */
-.section-title {
-    text-align: center;
-    margin-bottom: 20px; /* Adjust this value as needed */
-}
-
 /* Pricing Section */
 #pricing {
     padding: 80px 0;
